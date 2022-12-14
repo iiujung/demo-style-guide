@@ -13,7 +13,7 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="node_modules/bootstrap-table/dist/bootstrap-table.min.css">
 
-  <!-- 樣式 -->
+  <!-- 套件樣式客製化 -->
   <link rel="stylesheet" href="./bootstrap-table.css">
 
   <!-- 筆記用套件與樣式 -->
@@ -53,14 +53,18 @@
       <li>
         <div class="title">table 樣式調整</div>
         <p>調整bootstrap中_variables.scss的變數  <span>$table-hover-bg</span> 
-        <br>$table-hover-bg: pink !default;
+          <div class="codeblock">
+            $table-hover-bg: pink !default;
+          </div>
         </p>
       </li>
       <li>
         <div class="title">thead 樣式調整</div>
-        <p>thead 背景 下邊框的樣式 <br>
-          <code class="language-css">.bootstrap-table .fixed-table-container.fixed-height .table thead th {    background: #e2f7f7;
-            border-bottom: 1px solid #182767;}</code>
+        <p>thead 背景與下邊框的樣式 <br>
+            <div class="codeblock">
+              .bootstrap-table .fixed-table-container.fixed-height .table thead th {    background: #e2f7f7;
+            border-bottom: 1px solid #182767;}
+          </div>
         </p>
       </li>
       <li>
@@ -70,7 +74,7 @@
   </div>
 
   <div class="container">
-    <p class="h3">範例</p>
+    <p class="h3">範例1</p>
 
     <table class="table-striped" id="table" data-toggle="table" data-height="460" data-card-view="false" data-url="/data1.json">
       <thead>
@@ -101,7 +105,7 @@
     </ul>
   </div>
   <div class="container">
-    <p class="h3">範例</p>
+    <p class="h3">範例2</p>
 
     <table id="table1" data-toggle="table" data-height="460" data-click-to-select="true" data-url="/data1.json">
       <thead>
@@ -122,7 +126,6 @@
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/bootstrap-table/dist/bootstrap-table.min.js"></script>
- 
 </body>
 
 </html>
