@@ -1,0 +1,6 @@
+/* thead 背景 下邊框的樣式 */
+
+.bootstrap-table .fixed-table-container.fixed-height .table thead th {
+  background: #e2f7f7;
+  border-bottom: 1px solid #182767;
+}

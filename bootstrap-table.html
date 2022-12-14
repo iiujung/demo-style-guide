@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap-Table!</title>
+
+  <!-- 套件 -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap-table/dist/bootstrap-table.min.css">
+
+  <!-- 樣式 -->
+  <link rel="stylesheet" href="./bootstrap-table.css">
+
+  <!-- 筆記用套件與樣式 -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+<div class="main-content">
+  <div class="container note">
+    <p class="h1">
+      table 使用說明
+    </p>
+    <hr>
+    <p class="h3">
+      外觀樣式
+    </p>
+    <ul>
+      <li>
+        <div class="title">資料顯示方式 列表 or 卡片</div>
+        <p> data-card-view="true" = 顯示方式為卡片
+          data-card-view="false" = 顯示方式為列表</p>
+      </li>
+      <li>
+        <div class="title">table 樣式</div>
+        <p>預設classes 為 'table table-bordered table-hover' <br>
+         <ul> 可使用以下class 來調整樣式
+            <li>外邊框 <span>table-bordered</span> </li>
+            <li>無內邊框 <span>table-borderless</span></li>
+            <li>hover效果 <span>table-hover</span></li>
+            <li>table奇偶數列不同色 <span>table-striped</span></li>
+            <li>暗色系 <span>table-dark</span> </li>
+            <li>大小 <span>table-sm</span> </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <div class="title">table 樣式調整</div>
+        <p>調整bootstrap中_variables.scss的變數  <span>$table-hover-bg</span> 
+        <br>$table-hover-bg: pink !default;
+        </p>
+      </li>
+      <li>
+        <div class="title">thead 樣式調整</div>
+        <p>thead 背景 下邊框的樣式 <br>
+          <code class="language-css">.bootstrap-table .fixed-table-container.fixed-height .table thead th {    background: #e2f7f7;
+            border-bottom: 1px solid #182767;}</code>
+        </p>
+      </li>
+      <li>
+        <div class="title">tbody 樣式調整</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <p class="h3">範例</p>
+
+    <table class="table-striped" id="table" data-toggle="table" data-height="460" data-card-view="false" data-url="/data1.json">
+      <thead>
+        <tr>
+          <th data-field="id">ID</th>
+          <th data-field="name">Item Name</th>
+          <th data-field="price">Item Price</th>
+        </tr>
+      </thead>
+    </table>
+    
+  </div>
+  <div class="container note">
+    <p class="h3">
+      操作優化
+    </p>
+    <ul>
+      <li>
+        <div class="title">滑鼠選取範圍</div>
+        <p> data-click-to-select="true" : 點選row時就可以選取 <br>
+          data-click-to-select="false" : 點選checkbox才能選取
+        </p>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="container">
+    <p class="h3">範例</p>
+
+    <table id="table1" data-toggle="table" data-height="460" data-click-to-select="true" data-url="/data1.json">
+      <thead>
+        <tr>
+          <th data-field="state" data-checkbox="true"></th>
+          <th data-field="id">ID</th>
+          <th data-field="name">Item Name</th>
+          <th data-field="price">Item Price</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/bootstrap-table/dist/bootstrap-table.min.js"></script>
+ 
+</body>
+
+</html>

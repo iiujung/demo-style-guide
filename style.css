@@ -1,0 +1,26 @@
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-content .note span{
+    font-size: 14px;
+    padding: 2px 4px;
+    background: rgb(255, 211, 215);
+    color: black;
+    border-radius: 4px;
+}
+
+.container .title {
+    font-weight: 800;
+}
+
+.container + .container {
+    margin-bottom: 40px;
+}
+
+
+
+.h3::before {
+    content: "|";
+}
